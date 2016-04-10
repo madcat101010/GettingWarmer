@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mlevy94.robiny.gettingwarmer.MainActivity.MainActivity"
+    android:id="@+id/root">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:visibility="gone"
+        android:id="@+id/gotoPlaceText" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/JSONText"
+        android:text="Need to get directions..."/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/enterButt"
+        android:visibility="visible"
+        android:text="Enter Destination"
+        android:textSize="50dp"
+        android:background="#81fbb6" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/repeatButt"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:textSize="50dp"
+        android:text="Repeat Instruction"
+        android:background="#81fbb6"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/stopButt"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:text="Stop Navigation"
+        android:textSize="50dp"
+        android:background="#ffb2b4"/>
+</LinearLayout>
